@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Formulario</title>
+</head>
+<body>
+    <h2>Rellena tu CV</h2>
+    <form >
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <div class="form-control">
+            <label for="name">Nombre</label>
+            <input type="name" id="name"/>
+          </div>
+
+          <div class="form-control">
+            <label for="apellidos">Apellidos</label>
+            <input type="apellidos" id="apellidos"/>
+          </div>
+
+          <div class="form-control">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena"/>
+          </div>
+
+          <div class="form-control">
+            <label for="dni">DNI</label>
+            <input type="dni" id="dni"/>
+          </div>
+
+          <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+          <p>Incluir mi foto 
+            <input type="file" />
+          </p>
+          <p>Provincia
+            <select>
+                <option value="HTML">- seleccionar -</option>
+                <option value="pichincha">Pichincha</option>
+                <option value="guayas">Guayas</option>
+                <option value="React">React</option>
+          </select>
+          <input type="submit" value="Guardar cambios" />
+          <input type="reset" value="Borrar los cambios introducidos" />
+        </fieldset>
+  </form>
+</body>
+</html>
